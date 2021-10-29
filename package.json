@@ -1,0 +1,22 @@
+{
+  "name": "static-site-comp",
+  "version": "1.0.0",
+  "description": "(Mid Mod 2 Solo Project)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbergsund/m2-static-site-comp.git"
+  },
+  "author": " (Kyra Bergsund)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbergsund/m2-static-site-comp/issues"
+  },
+  "homepage": "https://github.com/kbergsund/m2-static-site-comp#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
