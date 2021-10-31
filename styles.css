@@ -14,7 +14,6 @@ main {
 }
 
 header {
-  border: 2px solid red;
   height: 10%;
   background-color: #1D1D39;
   display: flex;
@@ -22,7 +21,6 @@ header {
 }
 
 main {
-  border: 2px solid orange;
   height: 90%;
   padding: 2%;
 
@@ -66,10 +64,12 @@ h1 {
 h3, 
 h4 {
   margin: 0;
+  border: 1px solid yellow;
+  text-align: left;
+  margin-left: 5%;
 }
 
 section {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -86,9 +86,16 @@ section p {
 }
 
 p {
-  width: 100%;
-  font-size: 80%;
   border: 1px solid green;
+}
+
+section {
+  border: 1px solid
+}
+
+.header-title p {
+  font-size: 80%;
+  width: 100%;
 }
 
 .longer {
@@ -97,46 +104,95 @@ p {
 
 .grid {
   width: 100%;
-  height: 50%;
+  height: 60%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  grid-gap: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5%;
+  border: 0;
 }
 
 .user-card {
   width: 100%;
   height: 100%;
-  box-shadow: 1px 1px 6px -0.75px gray;
+  box-shadow: 1px 1px 6px -0.75px #1D1D39;
 }
 
 .user-image {
-  background-image: url("./assets/img/finn.jpeg");
-  background-color: rgba(0, 0, 0, 0.2);
-  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
   width: 100%;
   height: 40%;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .user-main {
   width: 100%;
   height: 60%;
+  /* padding: 5%; */
+  display: flex;
+  align-items: flex-start;
+}
+
+.user-main p {
+  margin-left: 5%;
 }
 
 button {
+  background-color: #1D1D39;
   border-radius: 100%;
-  height: 50px;
-  width: 50px;
+  height: 55px;
+  width: 55px;
   border: 0;
+  margin: 5%;
+}
+
+button img {
+  height: 60%;
 }
 
 .views {
-  font-size: 150%;
+  font-size: 225%;
+  vertical-align: top;
+  color: #363685;
 }
 
 .user-card div {
   width: 30%;
+  margin-top: 3%;
+}
+
+.finn {
+  background-image: url("./assets/img/finn.jpeg");
+}
+
+.jake {
+  background-image: url("./assets/img/jake.jpeg");
+}
+
+.bmo {
+  background-image: url("./assets/img/bmo.jpeg");
+}
+
+.bubblegum {
+  background-image: url("./assets/img/bubblegum.jpeg");
+}
+
+.lsp {
+  background-image: url("./assets/img/lsp.png");
+}
+
+.rainicorn {
+  background-image: url("./assets/img/lady_rainicorn.jpeg");
+}
+
+.marceline {
+  background-image: url("./assets/img/marceline.jpeg");
+}
+
+.ice {
+  background-image: url("./assets/img/ice_king.jpeg");
 }
