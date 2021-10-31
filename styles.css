@@ -1,3 +1,83 @@
+html {
+  height: 200%;
+}
+
 body {
   font-family: 'Zen Kaku Gothic Antique', Arial, sans-serif;
+  font-size: 16px;
+  border: 2px solid green;
+  height: 100%;
+  color: white;
+}
+
+header {
+  border: 2px solid red;
+  height: 10%;
+  background-color: #1D1D39;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  border: 2px solid orange;
+  height: 90%;
+}
+
+ul {
+  list-style: none;
+  display: inline;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  border: 1px solid yellow;
+  margin: 0;
+  padding: 0 5%;
+}
+
+nav {
+  width: 50%;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5%;
+  width: 24%;
+}
+
+img {
+  height: 20px;
+  color: #6B6BD1;
+  padding-right: 2%;
+}
+
+h1 {
+  font-size: 230%;
+  height: 90%;
+}
+
+section {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+}
+
+section p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 0;
+}
+
+p {
+  width: 100%;
+  font-size: 80%;
+}
+
+.longer {
+  width: 50%;
 }
