@@ -14,7 +14,7 @@ main {
 }
 
 header {
-  height: 12  %;
+  height: 12%;
   background-color: #1D1D39;
   display: flex;
   justify-content: space-between;
@@ -68,13 +68,19 @@ h2 {
 h3, 
 h4 {
   margin: 0;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   text-align: left;
   margin-left: 5%;
 }
 
 h3 {
   margin-top: 3%;
+  font-size: 125%;
+}
+
+h4 {
+  font-size: 130%;
+  margin-bottom: 4%;
 }
 
 section {
@@ -94,9 +100,9 @@ section p {
   margin: 2% 0;
 }
 
-p {
+/* p {
   border: 1px solid green;
-}
+} */
 
 section {
   border: 1px solid
@@ -115,7 +121,7 @@ section {
   width: 100%;
   height: 60%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
   grid-gap: 1.5%;
   border: 0;
   overflow: 0;
@@ -147,7 +153,7 @@ section {
   display: flex;
   align-items: flex-start;
   overflow: hidden;
-  /* justify-content: space-between; */
+  justify-content: space-around;
 }
 
 
@@ -164,9 +170,8 @@ button img {
   height: 60%;
 }
 
-.views {
-  font-size: 225%;
-  vertical-align: top;
+
+.purple {
   color: #363685;
 }
 
@@ -180,7 +185,7 @@ button img {
   font-size: 90%;
   height: 10%;
   border-radius: 7px;
-  background-color: #BAC4FF;
+  background-color: #A4A5FD;
 }
 
 .playlist {
@@ -188,17 +193,38 @@ button img {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  height: 50%;
+  margin: 0;
+  justify-content: space-evenly;
 }
 
 .user-main p {
-  margin-left: 5%;
+  margin: 0 0 0 5%;
+  /* color: #32304A; */
 }
 
-.user-main div {
-  width: 90%;
+.username {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.date {
+  color: #1D1D39;
+}
+
+.small-text {
+  font-size: 90%;
+  font-weight: 300;
+}
+
+.views {
+  font-size: 225%;
+  font-weight: 500;
+  vertical-align: top;
+  margin-top: -10%;
+  /* border: 1px solid red; */
 }
 
 .finn {
