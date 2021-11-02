@@ -1,76 +1,31 @@
+/* ~~~~~~~~~~ GLOBAL RULES ~~~~~~~~~~ */
 html {
   height: 200%;
+  border: 0;
 }
 
 body {
   font-family: 'Zen Kaku Gothic Antique', Arial, sans-serif;
-  border: 2px solid green;
   height: 100%;
-  color: white;
-}
-
-main {
-  background-color: #BAC4FF;
-}
-
-header {
-  height: 12%;
-  background-color: #1D1D39;
-  display: flex;
-  justify-content: space-between;
 }
 
 main {
   height: 90%;
   padding: 2%;
-
-}
-
-ul {
-  list-style: none;
-  display: inline;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  height: 100%;
-  border: 1px solid yellow;
-  margin: 0;
-  padding: 0 5%;
-}
-
-nav {
-  width: 50%;
-}
-
-li {
-  display: flex;
-  align-items: center;
-  padding-bottom: 5%;
-  width: 24%;
-}
-
-img {
-  height: 20px;
-  padding-right: 2%;
+  background-color: #F0EFFA;
 }
 
 h1 {
-  font-size: 230%;
-  /* height: 90%; */
+  font-size: 250%;
   padding-bottom: 10%;
+  padding-right: 3%;
+  text-align: right;
 }
 
 h2 {
   font-size: 210%;
   margin-bottom: 2%;
-}
-
-h3, 
-h4 {
-  margin: 0;
-  /* border: 1px solid yellow; */
-  text-align: left;
-  margin-left: 5%;
+  color: #1D1D39;
 }
 
 h3 {
@@ -83,14 +38,20 @@ h4 {
   margin-bottom: 4%;
 }
 
+h3, 
+h4 {
+  margin: 0;
+  text-align: left;
+  margin-left: 5%;
+}
+
 section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   width: 30%;
   text-align: center;
-  border: 0!important;
 }
 
 section p {
@@ -100,31 +61,64 @@ section p {
   margin: 2% 0;
 }
 
-/* p {
-  border: 1px solid green;
-} */
-
-section {
-  border: 1px solid
+header {
+  height: 12%;
+  background-color: #4F4DA7;
+  display: flex;
+  justify-content: space-between;
+  color: #F0EFFA;
 }
 
-.header-title p {
+nav {
+  width: 60%;
+  display: flex;
+  align-items: flex-end;
+}
+
+img {
+  height: 20px;
+  padding-right: 2%;
+}
+
+button {
+  border: 0;
+  width: fit-content;
+  background-color: #4F4DA7;
+  color: #F0EFFA;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  padding: 1%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #1d1d39;
+  border-radius: 15px;
+}
+
+/* ~~~~~~~~~~ HEADER RULES ~~~~~~~~~~ */
+
+.header-title button {
   font-size: 80%;
-  width: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .longer {
-  width: 50%;
+  width: 22%;
 }
 
 .grid {
   width: 100%;
-  height: 60%;
+  height: 70%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.5%;
   border: 0;
-  overflow: 0;
+  /* overflow: 0; */
 }
 
 .user-card {
@@ -149,15 +143,14 @@ section {
 .user-main {
   width: 100%;
   height: 60%;
-  background-color: #CACEFF;
+  background-color: #F0EFFA;
   display: flex;
   align-items: flex-start;
-  overflow: hidden;
+  /* overflow: hidden; */
   justify-content: space-around;
 }
 
-
-button {
+.user-button {
   background-color: #1D1D39;
   border-radius: 100%;
   height: 55px;
@@ -166,26 +159,31 @@ button {
   margin: 5%;
 }
 
-button img {
+.user-button img {
   height: 60%;
 }
 
-
 .purple {
-  color: #363685;
+  color: #A177FF;
 }
 
 .user-views {
   width: 30%;
-  margin-top: 3%;
+  padding-top: 3%;
+}
+
+.user-views p {
+  color: #F0EFFA;
 }
 
 .url {
+  height: 30%;
   width: 90%;
   font-size: 90%;
   height: 10%;
   border-radius: 7px;
-  background-color: #A4A5FD;
+  background-color: #4F4DA7;
+  color: white;
 }
 
 .playlist {
@@ -200,22 +198,20 @@ button img {
 
 .user-main p {
   margin: 0 0 0 5%;
-  /* color: #32304A; */
 }
 
 .username {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .date {
   color: #1D1D39;
+  width: fit-content;
 }
 
 .small-text {
   font-size: 90%;
+  color: #1D1D39;
   font-weight: 300;
 }
 
@@ -224,8 +220,9 @@ button img {
   font-weight: 500;
   vertical-align: top;
   margin-top: -10%;
-  /* border: 1px solid red; */
 }
+
+/* ~~~~~~~~~~ IMAGE RULES ~~~~~~~~~~ */
 
 .finn {
   background-image: url("./assets/img/finn.jpeg");
